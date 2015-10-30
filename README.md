@@ -18,3 +18,7 @@ _Spark is expecting **mammuut-listener-0.1-SNAPSHOT.jar** to be in the **target*
 ## Host Config
 In your /etc/hosts file add _vagrant IP (192.168.70.249)_ as host 'sandbox' to make it easier to access your sandbox UI.
 
+### More commands
+To stop all containers, from the virtual machine run `docker stop $(docker ps -a -q)`.
+To stop the virtual machine, from the Host run `vagrant halt` in the root of the project.
+
