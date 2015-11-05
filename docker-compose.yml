@@ -1,3 +1,16 @@
+spark:
+   image: sequenceiq/spark:1.5.1 
+   container_name: spark_docker
+   ports:
+        - "8088:8088"
+        - "8042:8042"
+        - "21160:21160"
+   volumes:
+        - ./workspace/mammuut-listener:/root/spark/bin/mammuut-listener/
+   hostname: sandbox
+   command: -d
+
+
 #jenkins:
 #  build: ./resources/jenkins
 #  container_name: mamuut-jenkins
